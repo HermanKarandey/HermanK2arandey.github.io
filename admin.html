@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="eu" manifest="cache.manifest">
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="admin.css">
+  <title>Admin</title>
+ </head>
+ <body>
+ 	<header>
+ 	<nav class="navbar navbar-expand-lg navbar-light back flexParent">
+	<div class="flexChild1"><button class=" bg-light navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-label="Toggle navigation">
+		
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+ <nav class="container-fluid">
+  <ul class="topmenu">
+
+    <li><a href="index.html" style="font-family: 'Liu Jian Mao Cao', cursive; font-size: 30px;">KREED</a></li>
+    <li><a href="">Main</a></li>	
+    <li><a href="" class="down">For Fans</a>
+      <ul class="submenu">
+        <li><a href="">Fan Club</a></li>
+        <li><a href="laba1.html">Tour schedule</a></li>
+        <li><a href="">Lyrics</a></li>
+    </li>
+     </ul>
+    <li><a href="News.html" class="down">News</a></li>
+    <li><a href="Maps.html">Concert</a></li>
+     <li><a href="shop.html">Fans appeal</a></li>
+      <li><a href="admin.html">Admin</a></li>
+
+  </ul>
+
+</nav>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="file" class="input" name="newsImage" accept="image/*">
+            <button id="addImageButton" class="input btn btn-secondary pl-5 pr-5" type="button">Add Image</button>
+            </div>
+            <div class="col-sm-8">
+                <div class="container1">
+                    <img id="uploadedImage" class="uploadImg">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="input">
+                <button id='sendNewsButton' class="btn btn-mdb-color" style="color:white;">SEND</button>
+            </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-12">
+                <div class="md-form primary-textarea textContainer">
+                            <textarea id="newsTitle" class="md-textarea form-control mb-0" rows="1"
+                                      style="padding-bottom: 1.2rem;">News title</textarea>
+                </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="md-form primary-textarea textContainer1">
+                            <textarea id='newsBody' class="md-textarea form-control mb-0" rows="5"
+                                      style="padding-bottom: 1.2rem;">News Body</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="db.js"></script>
+<script src="admin.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+  <script>
+  	var tdList = $('#tdApp ul');
+	$('tdlApp input').on('keydown',function(e){
+		if(e.keyCode != 13)
+			return;
+		var str = e.target.value;
+		e.target.value = "";
+
+		if(str.length > 0){
+			$('<li></li>').addClass('tdItem').text(str).appendTo(tdList);
+		}
+	});
+function isOnline() {
+    return window.navigator.onLine;
+}
+
+
+  </script>
+
+ </body>
+</html>

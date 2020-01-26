@@ -1,0 +1,171 @@
+body{
+
+	height: 2000px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    background-repeat: no-repeat;
+
+}
+
+.logo{
+
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 50px;
+	word-spacing: 100px;
+
+
+}
+
+
+a{
+
+	text-decoration: none;
+	color: black;
+
+
+
+* { box-sizing: border-box; }
+
+header{
+
+	text-align: center;
+	word-spacing: 100px;
+	font-size: 20px;
+
+}
+
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  text-align: center;
+}
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+
+
+
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+
+}
+.topmenu > li > a {
+  font-family: 'Exo 2', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+.down:after {
+  content: "\f107";
+  margin-left: 8px;
+  font-family: FontAwesome;
+  text-decoration: none;
+  list-style: none;
+}
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+  text-decoration: none;
+  list-style: none;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+  text-decoration: none;
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Kurale', serif;
+  text-decoration: none;
+}
+
+.banner{
+ 
+  background-image: url('kreedbanner.jpg');
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  display: inline-block;
+}
+
+h1{
+
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  color: #5B5D5D;
+
+}
+
+.textkreed{
+
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.textkreed, a{
+
+  color: #7B8282;
+
+
+}
+
+h2{
+
+  text-align: center;
+  font-size: 70px;
+  color: #5B5D5D;
+
+}
+
+.album{
+  margin-left: 30%;}
+.album1, .album2{
+ -webkit-animation:spin 10s linear infinite;
+
+
+}
+
+@-webkit-keyframes spin { 
+    100% { 
+        transform: rotate(360deg);
+    } 
+}
+
+@-webkit-keyframes scale {
+    100% {
+         transform: scaleX(2) scaleY(2);
+    }
+}
+
+
+}
