@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="Project.css">
+<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+	
+	<title>Photografer by Herman Karandey</title>	
+</head>
+<body>
+	<div class="bg-wrapper">
+	<div class="bg-grad one active"></div>
+	<div class="bg-grad two"></div>
+	<div class="bg-grad three"></div>
+	<div class="bg-grad four"></div>
+	
+</div>
+	<header>
+		<div class="container">
+			<nav class="flex">
+				<a href="" class="logo"><img src="logo-alt-w.png" height="50" width="50" alt="">Spacial</a>
+
+				<div class="goga">
+					<a href="">Home&#709;</a>
+					<a href="">Blogs&#709;</a>
+					<a href="">Pages&#709;</a>
+					<a href="">Features&#709;</a>
+					<a href="">Components&#709;</a>
+					<a href="">Shop&#709;</a>
+					<a href="http://spacialtheme.herokuapp.com/3.0/docs/intro.html"><button class="knopka">Theme Docs</button></a>
+				</div>
+			</div>
+			</nav>
+		<div style="margin: 100px;r">
+
+			<h1>HERMAN KARANDEY</h1>
+			<h2>PHOTOGRAFER</h2>
+			<h3><button>View my Work</button></h3>
+		</div>	
+		</div>
+	</header>
+
+	<div class="next">
+		<h4>
+			My Career Story
+		</h4>
+		<p>
+			Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. There are many ways to configure. Just go to the source, make changes and the rest is taken care automatically. Track your progress and learn along the way.
+
+
+		</p>
+	</div>
+
+			<div class="IMG"></div>
+			<div class="rock" style="background-image: url(Rock.jpg);">	
+			</div>
+			<div class="more" style="background-image: url(More.jpg);">	
+			</div>
+			<div class="people" style="background-image: url(People.jpg);">
+			</div>
+
+			<div class="Bg2">
+				<h5>Let me capture the best moments of your life
+					</h5>	
+				
+					<a href="#contact" class="scroll">
+      					Contact me now
+   						 </a>
+					</div>
+
+			<div class="Text2">
+				<p>
+					Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. There are many ways to configure. Just go to the source, make changes and the rest is taken care automatically.
+
+
+				</p>
+			</div>
+		<div class="gallery">
+			<div class="row">
+				<div class="pic1">
+				<div class="pic2">
+				<div class="pic3">	
+				</div>	
+				</div>	
+			    </div>
+			</div>
+		</div>
+			
+				
+		
+			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script type="text/javascript">
+			$(function(){
+			var transTime = 5000;
+			var numBgColors = $('.bg-grad').length;
+			var bgtrans = setInterval(function(){
+			if($('.bg-grad.active').index() == ($('.bg-grad').length-1)){
+			$('.bg-grad.active').removeClass('active');
+			$('.bg-grad').eq(0).addClass('active');
+			}else{
+			var curIndex = $('.bg-grad.active').index();
+			$('.bg-grad.active').removeClass('active');
+			$('.bg-grad').eq(curIndex+1).addClass('active');
+			}
+			},transTime);
+			});
+			</script>
+			
+</body>
+</html>
